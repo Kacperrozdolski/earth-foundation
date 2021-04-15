@@ -4,12 +4,16 @@
 
 <script>
 export default {
-  name: "",
+  name: "GalerySection",
 };
 </script>
 
 <style lang="scss" scoped>
 section {
-  background: red;
+  height: 35vh;
+  width: 100%;
+  background-image: url("../assets/junglePhoto.jpg");
+  background-position: center;
+  background-size: cover;
 }
 </style>

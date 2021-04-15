@@ -10,6 +10,8 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  background: red;
+  background: rgb(233, 172, 220);
+  height: 50vh;
+  width: 100%;
 }
 </style>
