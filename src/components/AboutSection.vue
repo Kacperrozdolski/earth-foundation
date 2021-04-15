@@ -63,7 +63,7 @@ section {
   justify-content: center;
   .about-container {
     width: 60%;
-    height: 80%;
+    min-height: 80%;
     display: flex;
     flex-direction: column;
     p {

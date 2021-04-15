@@ -41,7 +41,7 @@ body {
   margin: 0 !important;
   font-family: Lato;
 }
-F .earth-foundation {
+.earth-foundation {
   min-height: 100vh;
   width: 100%;
 }
