@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="earth-foundation">
+    <HeroSection />
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import HeroSection from "./components/HeroSection.vue";
+// import AboutSection from "./components/AboutSection.vue";
+// import DonateSection from "./components/DonateSection.vue";
+// import FooterSection from "./components/FooterSection.vue";
+// import GalerySection from "./components/GalerySection.vue";
+// import NewsletterSection from "./components/NewsletterSection.vue";
+// import ReadingSection from "./components/ReadingSection.vue";
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-  },
+  components: { HeroSection },
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0 !important;
+}
+.earth-foundation {
+  min-height: 100vh;
+  width: 100%;
 }
 </style>
