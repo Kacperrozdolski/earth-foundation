@@ -73,4 +73,26 @@ section {
     }
   }
 }
+@media only screen and (max-width: 1100px) {
+  .newsletter-container {
+    width: 60% !important;
+    margin-bottom: 40px;
+    .newsletter-input {
+      width: 80% !important;
+      button {
+        min-width: 45% !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .newsletter-container {
+    min-height: 100%;
+    width: 95% !important;
+    text-align: center;
+    .newsletter-input {
+      width: 80% !important;
+    }
+  }
+}
 </style>

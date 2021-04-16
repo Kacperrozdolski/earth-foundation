@@ -17,7 +17,7 @@ export default {
 <style lang="scss" scoped>
 section {
   background: #fbf8f6;
-  height: 15vh;
+  min-height: 15vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -25,6 +25,20 @@ section {
   p {
     width: 60%;
     text-align: center;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  section {
+    p {
+      width: 80% !important;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  section {
+    p {
+      width: 95% !important;
+    }
   }
 }
 </style>

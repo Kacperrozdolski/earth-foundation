@@ -7,7 +7,7 @@
           Quisque laoreet eros ut elementum molestie. Morbi posuere non ante non
           porta. Vivamus posuere lectus sed urna commodo gravida.
         </h1>
-        <div>
+        <div class="button-container">
           <button>Become a partner</button>
         </div>
       </div>
@@ -131,6 +131,39 @@ section {
           font-weight: 700;
           border-radius: 0.5rem;
           margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .reading-container {
+    margin: 30px 0;
+    gap: 20px;
+    width: 65% !important;
+    .card-container {
+      flex-direction: column !important;
+      gap: 30px;
+      .card {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .reading-container {
+    width: 95% !important;
+    .container-header {
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        width: 100% !important;
+      }
+      .button-container {
+        width: 100% !important;
+        justify-content: flex-start !important;
+        button {
+          width: 40%;
         }
       }
     }

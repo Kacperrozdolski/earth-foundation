@@ -38,7 +38,21 @@ section {
     color: white;
     p {
       font-size: 0.75rem;
-      text-align: right;
+    }
+  }
+}
+@media only screen and (max-width: 1100px) {
+  section {
+    .footer-container {
+      width: 80%;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  section {
+    text-align: left !important;
+    .footer-container {
+      width: 95%;
     }
   }
 }

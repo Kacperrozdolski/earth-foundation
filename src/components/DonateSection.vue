@@ -87,4 +87,30 @@ section {
     }
   }
 }
+@media only screen and (max-width: 1100px) {
+  section {
+    margin: 30px 0;
+    .donate-container {
+      flex-direction: column;
+      .donate-content {
+        width: 100% !important;
+      }
+      .donate-form {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .donate-container {
+    width: 95% !important;
+    flex-direction: column;
+    .donate-content {
+      width: 100% !important;
+    }
+    .donate-form {
+      width: 100% !important;
+    }
+  }
+}
 </style>

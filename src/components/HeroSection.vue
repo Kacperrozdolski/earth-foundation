@@ -15,6 +15,7 @@
           >Share
           <img src="../assets/smallLogo.svg" />
         </span>
+        <img src="../assets/hamburger.svg" class="hamburger" />
       </div>
     </nav>
     <main>
@@ -53,7 +54,7 @@ section {
     justify-content: space-evenly;
     color: white;
     .left {
-      width: 30%;
+      min-width: 30%;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -72,7 +73,7 @@ section {
       }
     }
     .right {
-      width: 30%;
+      min-width: 30%;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -83,6 +84,9 @@ section {
         align-items: center;
         justify-content: center;
       }
+      .hamburger {
+        display: none;
+      }
       span:nth-child(4) {
         background: #0e6248;
         gap: 3px;
@@ -91,7 +95,7 @@ section {
     }
   }
   main {
-    height: 90vh;
+    min-height: 90vh;
     width: 90%;
     display: flex;
     align-items: center;
@@ -108,8 +112,9 @@ section {
         text-align: center;
       }
       .content-button-container {
-        width: 50%;
-        justify-content: space-evenly;
+        min-width: 80%;
+        gap: 10px;
+        justify-content: space-around;
         display: flex;
         .green-button {
           background: #0e6248;
@@ -131,6 +136,59 @@ section {
         }
       }
     }
+  }
+}
+@media only screen and (max-width: 1100px) {
+  nav {
+    width: 100% !important;
+    .center {
+      width: auto;
+      img {
+        height: 60px !important;
+      }
+      span {
+        display: none !important;
+      }
+    }
+  }
+  main {
+    .hero-content {
+      width: 80% !important;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  nav {
+    width: 90% !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    .left {
+      display: none !important;
+    }
+    .center {
+      height: 100%;
+      display: flex;
+      justify-content: flex-start !important;
+      width: auto !important;
+    }
+    .right {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .hamburger {
+        margin-left: auto;
+        display: inline !important;
+        height: 30px;
+      }
+      span {
+        display: none !important;
+      }
+    }
+  }
+  h1 {
+    font-size: 2.5rem !important;
+    text-align: left !important;
   }
 }
 </style>

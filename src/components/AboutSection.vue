@@ -8,7 +8,7 @@
           pretium auctor, mauris ligula egestas tellus, sed porta erat nunc ut
           ligula.
         </h1>
-        <div>
+        <div class="button-container">
           <button>Become a volunteer</button>
         </div>
       </div>
@@ -56,7 +56,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  height: 90vh;
+  min-height: 90vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -135,6 +135,39 @@ section {
           font-weight: 700;
           border-radius: 0.5rem;
           margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .about-container {
+    margin: 30px 0;
+    gap: 20px;
+    width: 65% !important;
+    .card-container {
+      flex-direction: column !important;
+      gap: 30px;
+      .card {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .about-container {
+    width: 95% !important;
+    .container-header {
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        width: 100% !important;
+      }
+      .button-container {
+        width: 100% !important;
+        justify-content: flex-start !important;
+        button {
+          width: 40%;
         }
       }
     }
